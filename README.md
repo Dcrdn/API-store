@@ -1,4 +1,4 @@
-### Before running:
+## Before running:
 
 You need to setup your Postgres Database.
 
@@ -24,38 +24,47 @@ INSERT INTO products (name, price)
 You need to go to conf.js and modify the user and password according to yours.
 
 
-### Run project with:
+## Run project with:
 
-## 'node index.js'
+### 'node index.js'
 
 Open (http://localhost:3001) in your browser to see if it is working.
 
 
 ### GET
 
-## '/'
+## `/`
 
 Welcome message
 
 ### POST
 
-## '/totalPants'
+## `/totalPants`
 
 Receives a JSON in format: {'Pants': qty}
+
 Where qty is the number of Pants that I want to know the total price.
 
-## '/getTShirts'
+
+## `/getTShirts`
 
 Receives a JSON in format: {'Tshirt': qty}
+
 Where qty is the number of Tshirts that I want to know the total price.
 
-## '/totalHats'
+
+## `/totalHats`
 
 Receives a JSON in format: {'Hats': qty}
+
 Where qty is the number of Hats that I want to know the total price.
 
-## '/total'
+
+## `/total`
 
 Receives a JSON in format: {'items': [elements]} 
+
 Where elements is a list of products that I want to know the total price.
+
 I.E.: {'items':['T-Shirt','Pants','T-Shirt','Hat']}
+
