@@ -18,7 +18,7 @@ const getPantsPrice = (req, res)=>{
       if (error) {
         throw error
       }
-      var qty=req.body['Tshirt'];
+      var qty=req.body['T-Shirt'];
       var price=results.rows[0]['price'];
       var total= qty>2 ? qty*(price-1) : qty*price;
       res.status(200).json(total);
