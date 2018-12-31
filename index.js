@@ -17,10 +17,6 @@ app.use(
 app.get('/', (request, response) => {
     response.status(200).json({ info: 'Node.js, Express, and Postgres API' })
 });
-app.get('/1', (request, response) => {
-    response.status(200).json(2);
-});
-
 
 app.post('/totalTshirts', db.getTShirts);
 
